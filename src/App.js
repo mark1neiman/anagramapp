@@ -1,6 +1,5 @@
 import React from 'react';
-import Anagramfinder from './components/AnagramFinder/Anagramfinder';
-import Login from './components/login/Login';
+import page from './pages'
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext";
 
@@ -16,7 +15,7 @@ const App = () => {
 
   const ProtectedRoute = ({ children }) => {
     if (currentUser) {
-      return children;;
+      return children;
     }
 
     return <Navigate to="/login" />;
@@ -28,7 +27,7 @@ const App = () => {
       path: "/",
       element: (
         <ProtectedRoute>
-          <Anagramfinder />
+          <page.Home />
         </ProtectedRoute>
       ),
       children: [
@@ -36,7 +35,7 @@ const App = () => {
           path: "/",
           element: (
             <ProtectedRoute>
-              <Anagramfinder />
+              <page.Home />
             </ProtectedRoute>
           ),
         },
@@ -44,7 +43,7 @@ const App = () => {
     },
     {
       path: "/login",
-      element: <Login />,
+      element: <page.Login />,
     },
   ]);
 
