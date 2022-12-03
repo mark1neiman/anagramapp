@@ -41,7 +41,7 @@ My app devided by components, like any React app:
 - Yes, i used all known to me features to make everything maximum clean.
 
 #### What should you do before uploading?
-- Before you upload .txt list i kindly ask to reaplce all estonia characters like äöõü to aoou, otherwise anagram will not be found.
+- Before you upload .txt list i kindly ask to replace all estonian characters like äöõü to aoou, otherwise anagram will not be found.
 
 #### Users for signing in.
 
@@ -56,7 +56,7 @@ My app devided by components, like any React app:
 	email:  musa@webaza.eu
 	password:   musa123
 
-#### Do you need you user? 
+#### Do you need your private user? 
 You can register using Insomnia, postman and send post requests to https://ecommerce.webaza.eu/public/api/register. I used password hashing methond, so your password will not be seen to anyone.
 
 {
@@ -66,7 +66,7 @@ You can register using Insomnia, postman and send post requests to https://ecomm
 }
 
 ## PS.
-- I am realy thankful to take part in the assignment! It was not for me that easy as it may look, i tried do my best and make the CLEAN app. Everything in this task made me think on every character i coded. Thank you for your work also, hope you like it! Have a nice day. :wink:
+I am really thankful to take part in the assignment! It was not for me that easy as it may look, i tried do my best and make the CLEAN app. Everything in this task made me think on every character i coded. Thank you for your work also, hope you like it! Have a nice day. :wink:
 
 
 
