@@ -1,6 +1,5 @@
-import React from 'react'
 import { useNavigate } from "react-router-dom";
-import './logout.scss'
+
 
 const Logout = () => {
 
@@ -11,9 +10,9 @@ const Logout = () => {
     }
 
     return (
-        <>
+        <div className="button-allign">
             <button onClick={logout} className='button-logout'>Logout</button>
-        </>
+        </div>
     )
 }
 

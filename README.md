@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PHP + React Developer test assignment
 
-## Available Scripts
+## This is my solution for the assignment test made by UpTime.eu group.
 
-In the project directory, you can run:
+- Quick description:  Create an app which finds anagrams from a list uploaded on a database. 
+- Languages: ReactJs + PHP-Laravel. Database MySql, phpmyadmin
+- Requirements: React FRONTEND authentication (three premade users), Anagram finder, Wordbase uploader (i used .txt only lists)
 
-### `npm start`
+Wish me luck, lets go! :relaxed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lower is going to be frontend part of assignment made by Mark Neiman.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## REACT FRONTEND
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://ecommerce.webaza.eu/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### How it works?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+My app devided by components, like any React app:
 
-### `npm run eject`
+#### Components folder
+  - AnagramFinder - jsx/js fetched via axios to the database for fiding a typed word from database tables.
+  - WordbaseUploader - jsx/js fetched via axios to the database for uploading a .txt list to the database tables.
+  - Logout - just a small jsx for login out option, nothing special. 
+#### Pages folder
+  - Login - well login is login but uses, here i wanted to show myself :smile:, React createContext feature. Fetches via axios to
+    the database, finds out does the user exists or not.
+  - Home - just takes into all components and builds the app.
+#### Context folder
+  - authContext - made for checking does the user is allowed to find or upload anagrams. Also controls login functions. In app.js used 
+  react router dom to make it work.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### "What about SOLID" you may ask.
+- Well, i am not experinced with it but found information/recomendations. I tried to implement some features like Single-responsibility principle. thats why i created  Context, i created custom hooks to make code clean and easy to understand, i hope i used these recomendations right.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Clean code?
+- Yes, i used all known to me features to make everything maximum clean.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### What should you do before uploading?
+- Before you upload .txt list i kindly ask to reaplce all estonia characters like äöõü to aoou, otherwise anagram will not be found.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Users for signing in.
 
-## Learn More
+    https://ecommerce.webaza.eu/login 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	email:  liana@webaza.eu
+	password:   liana123
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	email:  vinc@webaza.eu
+	password:   vinc123
 
-### Code Splitting
+	email:  musa@webaza.eu
+	password:   musa123
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Do you need you user? 
+You can register using Insomnia, postman and send post requests to https://ecommerce.webaza.eu/public/api/register. I used password hashing methond, so your password will not be seen to anyone.
 
-### Analyzing the Bundle Size
+{
+"name":"Musa Pittman", 
+"email":"musa@webaza.eu",
+"password":"musa123"
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## PS.
+- I am realy thankful to take part in the assignment! It was not for me that easy as it may look, i tried do my best and make the CLEAN app. Everything in this task made me think on every character i coded. Thank you for your work also, hope you like it! Have a nice day. :wink:
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
