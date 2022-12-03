@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "./context/authContext";
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
   Navigate,
 } from "react-router-dom";
@@ -17,12 +17,11 @@ const App = () => {
     if (currentUser) {
       return children;
     }
-
     return <Navigate to="/login" />;
   };
 
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: (
