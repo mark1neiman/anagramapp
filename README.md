@@ -27,7 +27,7 @@ My app devided by components, like any React app:
   - WordbaseUploader - jsx/js fetched via axios to the database for uploading a .txt list to the database tables.
   - Logout - just a small jsx for login out option, nothing special. 
 #### Pages folder
-  - Login - well login is login but uses, here i wanted to show myself :smile:, React createContext feature. Fetches via axios to
+  - Login - well login is login but uses :smile:, React createContext feature. Fetches via axios to
     the database, finds out does the user exists or not.
   - Home - just takes into all components and builds the app.
 #### Context folder

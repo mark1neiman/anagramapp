@@ -29,7 +29,7 @@ const Anagramfinder = () => {
                     id="message"
                     name="message"
                     value={message}
-                    onChange={e => setMessage(e.target.value)}
+                    onChange={e => setMessage(e.target.value.toLowerCase())}
                     placeholder="Type a word..."
                 />
 
