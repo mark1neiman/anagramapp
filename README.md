@@ -66,7 +66,7 @@ You can register using Insomnia, postman and send post requests to https://ecomm
 }
 
 ## PS.
-- I am really thankful to take part in the assignment! It was not for me that easy as it may look, i tried do my best and make the CLEAN app. Everything in this task made me think on every character i coded. Thank you for your work also, hope you like it! Have a nice day. :wink:
+I am really thankful to take part in the assignment! It was not for me that easy as it may look, i tried do my best and make the CLEAN app. Everything in this task made me think on every character i coded. Thank you for your work also, hope you like it! Have a nice day. :wink:
 
 
 

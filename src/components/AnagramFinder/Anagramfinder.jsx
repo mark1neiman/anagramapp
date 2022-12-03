@@ -1,10 +1,25 @@
-import UseAnagram from './hooks/UseAnagram';
-
+import { useState } from 'react';
+import Axios from 'axios';
 
 const Anagramfinder = () => {
 
-    const { wordvalue, submitMessage, anagramList, message } = UseAnagram();
+    const [message, setMessage] = useState('');
+    const [listArray, setListArray] = useState([]);
 
+    const submitMessage = (e) => {
+        e.preventDefault();
+        Axios.get(`https://ecommerce.webaza.eu/public/api/words/${message}`)
+
+            .then((res) => {
+                setListArray(res.data)
+            })
+    };
+
+    const anagramList = listArray.map((anagram, i) =>
+        <li key={i}>
+            {anagram}
+        </li>
+    )
     return (
         <>
             <form onSubmit={submitMessage}>
@@ -14,7 +29,7 @@ const Anagramfinder = () => {
                     id="message"
                     name="message"
                     value={message}
-                    onChange={wordvalue}
+                    onChange={e => setMessage(e.target.value)}
                     placeholder="Type a word..."
                 />
 
