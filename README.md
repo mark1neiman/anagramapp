@@ -46,7 +46,7 @@ My app devided by components, like any React app:
 
 #### Users for signing in.
 
-    https://ecommerce.webaza.eu/
+    https://ecommerce.webaza.eu/#/login
 
 	email:  liana@webaza.eu
 	password:   liana123
