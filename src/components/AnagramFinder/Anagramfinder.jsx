@@ -2,13 +2,12 @@ import { useState } from 'react';
 import Axios from 'axios';
 
 const Anagramfinder = () => {
-
     const [message, setMessage] = useState('');
     const [listArray, setListArray] = useState([]);
 
     const submitMessage = (e) => {
         e.preventDefault();
-        Axios.get(`https://ecommerce.webaza.eu/public/api/words/${message}`)
+        Axios.get(`process.env.REACT_APP_ANAGRAM_FINDER${message}`)
 
             .then((res) => {
                 setListArray(res.data)

@@ -1,6 +1,8 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 
+
+
 export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
@@ -9,13 +11,12 @@ export const AuthContextProvider = ({ children }) => {
     );
 
     const login = async (inputs) => {
-        const res = await axios.post("https://ecommerce.webaza.eu/public/api/login", inputs, {
+        const res = await axios.post(`process.env.REACT_APP_ANAGRAM_USER_LOGIN`, inputs, {
             withCredentials: true,
         });
 
         setCurrentUser(res.data)
     };
-
     useEffect(() => {
         localStorage.setItem("user", JSON.stringify(currentUser));
     }, [currentUser]);

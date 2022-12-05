@@ -14,7 +14,7 @@ export const UseUpload = () => {
         e.preventDefault();
         const fData = new FormData();
         fData.append('file', filedata);
-        Axios.post("https://ecommerce.webaza.eu/public/api/upload", fData)
+        Axios.post(`process.env.REACT_APP_ANAGRAM_LIST_UPLOAD`, fData)
 
             .then((res) => {
                 console.log(res.data)
