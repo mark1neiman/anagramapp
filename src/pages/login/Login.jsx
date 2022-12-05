@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 
 const Login = () => {
-
     const [inputs, setInputs] = useState({
         email: "",
         password: "",
