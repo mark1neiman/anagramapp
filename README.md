@@ -15,9 +15,6 @@ Backend can be found here https://github.com/mark1neiman/anagram-backend
 
 
 
-## REACT FRONTEND
-
-https://ecommerce.webaza.eu/
 
 ### How it works?
 
